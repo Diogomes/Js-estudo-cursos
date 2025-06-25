@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Moderno: Callbacks, Promises e Async/Await</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Manipulação Assíncrona em JavaScript</h1>
+    
+    <input type="number" id="userId" placeholder="Digite um ID (ex: 1)" />
+    
+    <div class="buttons">
+      <button onclick="usarCallback()">Buscar com Callback</button>
+      <button onclick="usarPromise()">Buscar com Promise</button>
+      <button onclick="usarAsyncAwait()">Buscar com Async/Await</button>
+    </div>
+
+    <pre id="log"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
