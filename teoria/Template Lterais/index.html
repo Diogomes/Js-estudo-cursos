@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Literals em JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Template Literals (JS ES6+)</h1>
+
+    <input type="text" id="nome" placeholder="Digite seu nome" />
+    <input type="number" id="idade" placeholder="Digite sua idade" />
+    <button onclick="gerarMensagem()">Gerar Mensagem</button>
+
+    <pre id="resultado"></pre>
+
+    <h2>Tabela de Conceitos</h2>
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>Recurso</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Interpolação de variáveis</td>
+            <td><code>`Olá, ${nome}`</code></td>
+          </tr>
+          <tr>
+            <td>Quebra de linha</td>
+            <td><code>`Linha 1<br>Linha 2`</code></td>
+          </tr>
+          <tr>
+            <td>Expressões</td>
+            <td><code>`2 + 2 = ${2 + 2}`</code></td>
+          </tr>
+          <tr>
+            <td>Condições inline</td>
+            <td><code>`Você é ${idade > 18 ? 'maior' : 'menor'} de idade`</code></td>
+          </tr>
+          <tr>
+            <td>Funções e métodos</td>
+            <td><code>`Nome: ${nome.toUpperCase()}`</code></td>
+          </tr>
+          <tr>
+            <td>Tagged Templates (básico)</td>
+            <td><code>tag`Texto ${variavel}`</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

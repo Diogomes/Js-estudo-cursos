@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destructuring em JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Destructuring (ES6+)</h1>
+    <button onclick="executarDestructuring()">Executar exemplos</button>
+
+    <pre id="log"></pre>
+
+    <h2>Tabela de Conceitos</h2>
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>Conceito</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Array simples</td>
+            <td><code>[a, b] = [1, 2]</code></td>
+          </tr>
+          <tr>
+            <td>Objeto simples</td>
+            <td><code>{ nome } = pessoa</code></td>
+          </tr>
+          <tr>
+            <td>Alias</td>
+            <td><code>{ nome: nomeCompleto }</code></td>
+          </tr>
+          <tr>
+            <td>Valores padrão</td>
+            <td><code>[a = 1] = []</code></td>
+          </tr>
+          <tr>
+            <td>Aninhado (nested)</td>
+            <td><code>{ endereco: { cidade } }</code></td>
+          </tr>
+          <tr>
+            <td>Ignorar itens</td>
+            <td><code>[, segundo] = [1, 2, 3]</code></td>
+          </tr>
+          <tr>
+            <td>Função com objeto</td>
+            <td><code>function({ nome })</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
